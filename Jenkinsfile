@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+    // agent any {in case there is no agent}
+    agent {label 'dev-agent-1'}
     stages {
         stage('Cloning the code') {
             steps { echo 'Here we are Cloning the code'
