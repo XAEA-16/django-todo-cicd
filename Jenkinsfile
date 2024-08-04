@@ -1,6 +1,5 @@
 pipeline {
     // agent any {in case there is no agent}
-    
     agent {label 'dev-agent-1'}
     stages {
         stage('Cloning the code') {
